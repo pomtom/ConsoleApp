@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Database
 {
-    public class TryDbContext:DbContext
+    public class TryDbContext : DbContext
     {
         private readonly ILoggerFactory _loggerFactory = LoggerFactory.Create(config => config.AddConsole());
 

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Database
+﻿namespace Database
 {
     internal class Program
     {
