@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "Database\Databa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelectOperator", "SelectOperator\SelectOperator.csproj", "{19A505A8-FF72-4CC4-9845-B53408448661}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderOperator", "OrderOperator\OrderOperator.csproj", "{837B68AF-6C27-4F35-BD38-70DE072C4D99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderOperator", "OrderOperator\OrderOperator.csproj", "{837B68AF-6C27-4F35-BD38-70DE072C4D99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

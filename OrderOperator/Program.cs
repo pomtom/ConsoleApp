@@ -1,4 +1,5 @@
 ﻿using Database;
+using System.Collections.Generic;
 
 namespace OrderOperator
 {
@@ -6,29 +7,29 @@ namespace OrderOperator
     {
         static void Main(string[] args)
         {
-            var context = new TryDbContext();
-
-
             Console.WriteLine($"Before order by ascending");
-            var employees = context.Employees;
+            WrpperEmployee Wrapperemp = new WrpperEmployee();
+
+            var employees = Wrapperemp.GetAllEmployees();
 
             foreach (var employee in employees)
             {
                 Console.WriteLine(employee.Name);
             }
 
-            var emps = employees;
             Console.WriteLine($"After Order by Ascending");
-            foreach (var employee in emps.OrderBy(a => a.Name))
+            foreach (var employee in employees.OrderBy(a => a.Name))
             {
                 Console.WriteLine(employee.Name);
             }
 
             Console.WriteLine($"After Order by Descending");
-            foreach (var employee in emps.OrderByDescending(a => a.Name))
+            foreach (var employee in employees.OrderByDescending(a => a.Name))
             {
                 Console.WriteLine(employee.Name);
             }
+
+            Console.ReadLine();
         }
     }
 }
