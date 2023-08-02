@@ -12,7 +12,7 @@ namespace Database
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLoggerFactory(_loggerFactory);
-            optionsBuilder.UseSqlServer(@"Data Source=UPSDJ;Initial Catalog=TryDB;Persist Security Info=True;TrustServerCertificate=True;Trusted_Connection=true;MultipleActiveResultSets=true;");
+            optionsBuilder.UseSqlServer(@"Data Source=BTL389;Initial Catalog=TryDB;Persist Security Info=True;TrustServerCertificate=True;Trusted_Connection=true;MultipleActiveResultSets=true;");
         }
     }
 }

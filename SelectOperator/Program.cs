@@ -8,7 +8,7 @@ namespace SelectOperator
         {
             var context = new TryDbContext();
 
-            var employees = context.Employees
+            var employees = context.Employees.SetQueryName()
                 .Where(a => a.City == "Sangola")
                 .Select(emp => new
                 {

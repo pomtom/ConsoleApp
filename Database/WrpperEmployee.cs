@@ -20,7 +20,7 @@ namespace Database
         public List<EmployeeClone> GetAllEmployees()
         {
             var context = new TryDbContext();
-            List<Employee> employees = context.Employees.ToList();
+            List<Employee> employees = context.Employees.SetQueryName().ToList();
             var cloneEmployees = mapper.Map<List<EmployeeClone>>(employees);
             return cloneEmployees;
         }
